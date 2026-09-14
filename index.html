@@ -1,0 +1,278 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#3b0b04">
+  <meta name="description" content="A warm Ganpati Bappa Morya wish for happiness, peace, prosperity and success.">
+  <title>Ganpati Bappa Morya | Ganesh Chaturthi Wishes</title>
+  <style>
+    :root {
+      --saffron: #ff9d24;
+      --gold: #ffd56a;
+      --cream: #fff5db;
+      --deep-red: #260603;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      overflow: hidden;
+      color: white;
+      font-family: Georgia, "Times New Roman", serif;
+      background:
+        radial-gradient(circle at 50% 36%, #9e4505 0, #4a1405 35%, var(--deep-red) 72%, #100200 100%);
+    }
+
+    body::before {
+      position: fixed;
+      inset: 0;
+      opacity: .2;
+      pointer-events: none;
+      content: "";
+      background-image: radial-gradient(rgba(255, 213, 106, .8) 1px, transparent 1px);
+      background-size: 34px 34px;
+      mask-image: linear-gradient(to bottom, black, transparent 80%);
+    }
+
+    .glow {
+      position: fixed;
+      top: 44%;
+      left: 50%;
+      width: min(560px, 100vw);
+      aspect-ratio: 1;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      background: radial-gradient(circle, rgba(255, 193, 57, .45), rgba(255, 100, 0, .13) 46%, transparent 70%);
+      filter: blur(12px);
+      pointer-events: none;
+    }
+
+    .petals {
+      position: fixed;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .petal {
+      position: absolute;
+      top: -3rem;
+      font-size: clamp(1.2rem, 3vw, 1.8rem);
+      animation: fall linear infinite;
+    }
+
+    .petal:nth-child(1) { left: 7%; animation-duration: 9s; }
+    .petal:nth-child(2) { left: 19%; animation-duration: 12s; animation-delay: -4s; }
+    .petal:nth-child(3) { left: 33%; animation-duration: 8s; animation-delay: -1s; }
+    .petal:nth-child(4) { left: 48%; animation-duration: 11s; animation-delay: -6s; }
+    .petal:nth-child(5) { left: 64%; animation-duration: 9s; animation-delay: -3s; }
+    .petal:nth-child(6) { left: 79%; animation-duration: 13s; animation-delay: -8s; }
+    .petal:nth-child(7) { left: 93%; animation-duration: 10s; animation-delay: -2s; }
+
+    @keyframes fall {
+      to { transform: translate3d(var(--drift), 110vh, 0) rotate(360deg); }
+    }
+
+    main {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      min-height: 100vh;
+      place-items: center;
+      padding: 1.25rem;
+    }
+
+    .card {
+      width: min(42rem, 100%);
+      padding: clamp(2rem, 6vw, 3.5rem) clamp(1.25rem, 6vw, 3rem);
+      text-align: center;
+      border: 1px solid rgba(255, 213, 106, .85);
+      border-radius: 2rem;
+      background: linear-gradient(145deg, rgba(78, 19, 3, .82), rgba(35, 5, 1, .88));
+      box-shadow: 0 0 1.5rem #ff9d00, 0 0 5rem rgba(255, 140, 0, .3), inset 0 0 2rem rgba(255, 190, 50, .12);
+      backdrop-filter: blur(8px);
+    }
+
+    .om {
+      color: var(--gold);
+      font-size: clamp(2.5rem, 9vw, 4rem);
+      line-height: 1;
+      text-shadow: 0 0 1.5rem #ff9d00;
+    }
+
+    .ganesha {
+      display: flex;
+      justify-content: center;
+      margin: .5rem auto .8rem;
+    }
+
+    .ganesha img {
+      width: 280px;
+      max-width: 80%;
+      border-radius: 20px;
+      filter: drop-shadow(0 0 25px #ffb300);
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      50% { transform: translateY(-.7rem); }
+    }
+
+    h1 {
+      color: var(--gold);
+      font-size: clamp(2rem, 8vw, 3.6rem);
+      line-height: 1.1;
+      text-shadow: 0 0 1.25rem #ff7900;
+    }
+
+    .subtitle {
+      margin-top: .8rem;
+      color: var(--cream);
+      font-size: clamp(1.15rem, 4vw, 1.55rem);
+    }
+
+    .wish {
+      max-width: 34rem;
+      margin: 1.5rem auto 0;
+      color: #fff8e9;
+      font-size: clamp(1rem, 3vw, 1.2rem);
+      line-height: 1.8;
+    }
+
+    .highlight { color: var(--gold); font-weight: bold; }
+
+    .morya {
+      margin-top: 1.4rem;
+      color: #ffc84d;
+      font-size: clamp(1.3rem, 5vw, 1.8rem);
+      animation: pulse 1.5s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      50% { transform: scale(1.05); text-shadow: 0 0 1.5rem orange; }
+    }
+
+    button {
+      margin-top: 1.5rem;
+      padding: .8rem 1.8rem;
+      color: #4a1600;
+      font: bold 1rem Georgia, serif;
+      cursor: pointer;
+      border: 0;
+      border-radius: 2rem;
+      background: linear-gradient(45deg, #ff8c00, #ffd447);
+      box-shadow: 0 0 1.25rem #ff9d00;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    button:hover, button:focus-visible {
+      transform: scale(1.06);
+      box-shadow: 0 0 1.8rem #ffd447;
+    }
+
+    button:focus-visible { outline: 3px solid white; outline-offset: 4px; }
+
+    .diyas {
+      position: fixed;
+      right: 0;
+      bottom: .8rem;
+      left: 0;
+      z-index: 2;
+      color: #ffd56a;
+      text-align: center;
+      font-size: clamp(1.5rem, 5vw, 2.2rem);
+      letter-spacing: clamp(.25rem, 2vw, .75rem);
+      filter: drop-shadow(0 0 .5rem #ff9800);
+    }
+
+    .firework {
+      position: fixed;
+      z-index: 3;
+      pointer-events: none;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="glow" aria-hidden="true"></div>
+
+  <div class="petals" aria-hidden="true">
+    <span class="petal">ðŸŒ¸</span><span class="petal">ðŸŒº</span><span class="petal">ðŸŒ¼</span>
+    <span class="petal">ðŸŒ¸</span><span class="petal">ðŸŒº</span><span class="petal">ðŸŒ¼</span><span class="petal">ðŸŒ¸</span>
+  </div>
+
+  <main>
+    <section class="card" aria-labelledby="page-title">
+      <div class="om" aria-hidden="true">à¥</div>
+      <div class="ganesha">
+        <img src="ganesha.png" alt="Lord Ganesha seated on a decorated golden throne">
+      </div>
+      <h1 id="page-title">Ganpati Bappa Morya</h1>
+      <p class="subtitle">ðŸŒº Happy Ganesh Chaturthi ðŸŒº</p>
+      <p class="wish">
+        May <span class="highlight">Lord Ganesha</span>, the remover of obstacles, bless you and your family
+        with <span class="highlight">happiness, peace, prosperity and success.</span>
+        <br><br>
+        May Bappa fill your life with beautiful moments, positive energy and endless blessings. ðŸª”âœ¨
+      </p>
+      <p class="morya">ðŸ™ à¤—à¤£à¤ªà¤¤à¥€ à¤¬à¤¾à¤ªà¥à¤ªà¤¾ à¤®à¥‹à¤°à¤¯à¤¾ ðŸ™</p>
+      <button type="button" id="celebrate-button">ðŸª” Jai Shree Ganesh ðŸª”</button>
+    </section>
+  </main>
+
+  <div class="diyas" aria-hidden="true">ðŸª” ðŸª” ðŸª” ðŸª” ðŸª”</div>
+
+  <script>
+    const button = document.querySelector("#celebrate-button");
+    const petals = document.querySelector(".petals");
+    const symbols = ["âœ¨", "ðŸŒ¸", "ðŸŒº", "ðŸŒ¼", "ðŸ™", "ðŸª”"];
+    const flowers = ["ðŸŒ¸", "ðŸŒº", "ðŸŒ¼", "ðŸŒ·", "ðŸŒ¹"];
+
+    for (let i = 0; i < 24; i += 1) {
+      const petal = document.createElement("span");
+      petal.className = "petal";
+      petal.textContent = flowers[i % flowers.length];
+      petal.style.left = `${Math.random() * 100}%`;
+      petal.style.fontSize = `${1.1 + Math.random() * 1.1}rem`;
+      petal.style.animationDuration = `${7 + Math.random() * 8}s`;
+      petal.style.animationDelay = `${-Math.random() * 14}s`;
+      petal.style.setProperty("--drift", `${-12 + Math.random() * 24}vw`);
+      petals.appendChild(petal);
+    }
+
+    function celebrate() {
+      for (let i = 0; i < 70; i += 1) {
+        const particle = document.createElement("span");
+        const angle = Math.random() * Math.PI * 2;
+        const distance = 150 + Math.random() * 350;
+        particle.className = "firework";
+        particle.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+        particle.style.left = "50%";
+        particle.style.top = "50%";
+        particle.style.fontSize = "22px";
+        document.body.appendChild(particle);
+        particle.animate(
+          [
+            { transform: "translate(-50%, -50%)", opacity: 1 },
+            { transform: `translate(${Math.cos(angle) * distance}px, ${Math.sin(angle) * distance}px)`, opacity: 0 }
+          ],
+          { duration: 1800, easing: "ease-out" }
+        );
+        window.setTimeout(() => particle.remove(), 1800);
+      }
+    }
+
+    button.addEventListener("click", celebrate);
+  </script>
+</body>
+</html>
+
